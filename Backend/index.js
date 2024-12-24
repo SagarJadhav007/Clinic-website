@@ -8,6 +8,16 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+var whitelist = ["http://127.0.0.1:5500/Frontend/appointment.html"];
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
 // MongoDB Connection
 mongoose
   .connect(
@@ -40,7 +50,7 @@ const appointmentSchema = new mongoose.Schema({
 const Appointment = mongoose.model("Appointment", appointmentSchema);
 
 // API Endpoint to Handle Form Submission
-app.post("/api/appointments", async (req, res) => {
+app.post("/api/appointments", cors(corsOptions), async (req, res) => {
   console.log("Request Body:", req.body); // Log the incoming data
 
   const { name, email, mobile, appointmentDate, problemDescription } = req.body;
