@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Klinik - Clinic Website Template</title>
+    <title>Sonolife</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -41,6 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/Style-2.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -65,7 +66,7 @@
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>123 Street, New York, USA</small>
+            <small>Near Aayush Hospital, Kalyan</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center py-3">
             <small class="far fa-clock text-primary me-2"></small>
@@ -114,7 +115,7 @@
         class="navbar-brand d-flex align-items-center px-4 px-lg-5"
       >
         <h1 class="m-0 text-primary">
-          <i class="far fa-hospital me-3"></i>Klinik
+          <img id="logo" src="img/Sonolife_cdr_page-0001 (1).jpg" />
         </h1>
       </a>
       <button
@@ -230,11 +231,14 @@
               >
                 Features
               </p>
-              <h1 class="text-white mb-4">Why Choose Us</h1>
-              <p class="text-white mb-4 pb-2">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo erat amet
+              <h1 class="text-white ">Why Choose Us</h1>
+              <p class="text-white ">
+                <ul id="featuresList" class="text-white">
+                  <li><strong>Expert Sonographers:</strong> Our certified professionals deliver precise and reliable ultrasound imaging.</li>
+                  <li><strong>Fast Results:</strong> Efficient scheduling and quick reporting to support timely medical decisions.</li>
+                  <li><strong>Patient-Centered Approach:</strong> We focus on providing a stress-free and personalized experience.</li>
+                  <li><strong>Affordable Excellence:</strong> Quality sonography services at prices that fit your budget.</li>
+                </ul>
               </p>
               <div class="row g-4">
                 <div class="col-6">
@@ -318,103 +322,41 @@
     <!-- Team Start -->
     <div class="container-xxl py-5">
       <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
           <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
-          <h1>Our Experience Doctors</h1>
         </div>
         <div class="row g-4">
+          <!-- Doctor Image and Info -->
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item position-relative rounded overflow-hidden">
               <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                <img class="img-fluid" src="img/team-1.jpg" alt="Doctor Image" />
               </div>
               <div class="team-text bg-light text-center p-4">
-                <h5>Doctor Name</h5>
-                <p class="text-primary">Department</p>
+                <h5>Dr. [Doctor's Name]</h5>
                 <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-2.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Doctor Name</h5>
-                <p class="text-primary">Department</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
+          <!-- Doctor Additional Information -->
+          <section id="meet-our-doctor">
+            <div style="flex: 1; text-align: left; padding:50px; font-size: 18px; color: #555;">
+              <h2 style=" font-size: 35px; margin-bottom: 40px; padding-top:20px; text-align:center;">Meet Our Doctor</h2>
+              <p>At Sonolife, your health is in expert hands.</p>
+              <p><strong>Dr. [Doctor's Name]</strong></p>
+              <ul style="list-style-type: none; padding: 0;">
+                <li><strong>Qualification:</strong> [e.g., MBBS, MD in Radiology/Sonography]</li>
+                <li><strong>Experience:</strong> Over [X] years of experience in diagnostic imaging and sonography.</li>
+                <li><strong>Specialization:</strong> [e.g., Prenatal ultrasounds, abdominal scans, musculoskeletal imaging, etc.]</li>
+                <li><strong>Commitment to Care:</strong> Dr. [Last Name] is dedicated to providing accurate diagnoses and compassionate care tailored to each patient’s unique needs.</li>
+              </ul>
+              <p>Dr. [Name] believes in a patient-first approach and continually updates their expertise with the latest advancements in diagnostic technology.</p>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-3.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Doctor Name</h5>
-                <p class="text-primary">Department</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item position-relative rounded overflow-hidden">
-              <div class="overflow-hidden">
-                <img class="img-fluid" src="img/team-4.jpg" alt="" />
-              </div>
-              <div class="team-text bg-light text-center p-4">
-                <h5>Doctor Name</h5>
-                <p class="text-primary">Department</p>
-                <div class="team-social text-center">
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -422,90 +364,89 @@
 
     <!-- Footer Start -->
     <div
-      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social rounded-circle" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social rounded-circle" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social rounded-circle" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social rounded-circle" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Services</h5>
-            <a class="btn btn-link" href="">Cardiology</a>
-            <a class="btn btn-link" href="">Pulmonary</a>
-            <a class="btn btn-link" href="">Neurology</a>
-            <a class="btn btn-link" href="">Orthopedics</a>
-            <a class="btn btn-link" href="">Laboratory</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
+    class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+    data-wow-delay="0.1s"
+  >
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Near Aayush Hospital,
+            Kalyan
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>info@example.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social rounded-circle" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social rounded-circle" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social rounded-circle" href=""
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social rounded-circle" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >HTML Codex</a
-              >
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Services</h5>
+          <a class="btn btn-link" href="">General Diagnostic Ultrasound</a>
+          <a class="btn btn-link" href="">Pregnancy and Obstetric Services</a>
+          <a class="btn btn-link" href="">Musculoskeletal Ultrasound</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Newsletter</h5>
+          <p>Subscribe to our newsletter to get future updates</p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input
+              class="form-control border-0 w-100 py-3 ps-4 pe-5"
+              type="text"
+              placeholder="Your email"
+            />
+            <button
+              type="button"
+              class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+            >
+              SignUp
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Sonolife</a>, All Right
+            Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed By
+            <a class="border-bottom" href="https://htmlcodex.com"
+              >HTML Codex</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Footer End -->
 
     <!-- Back to Top -->
